@@ -1,0 +1,10 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Resources:
+  HelloBucket:
+    Type: 'AWS::S3::Bucket'
+Outputs:
+  HelloBucket:
+    Value: !GetAtt HelloBucket.DomainName
+  HelloBucketDomain:
+    Description: the domian name of bucket
+    Value: !GetAtt HelloBucket.DomainName
